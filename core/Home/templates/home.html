@@ -1,0 +1,447 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="{% static 'icon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>AgroTech IT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel='stylesheet' href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-scholar.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <style>
+        /* Custom styles for blurring and darkening the background */
+        .modal-backdrop {
+            background-color: rgba(0, 0, 0, 0.938);
+        }
+
+
+        .modal-dialog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 75vw;
+            max-height: 100vh;
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+        }
+
+        .modal-content {
+            border: none;
+            border-radius: 0;
+        }
+
+
+        .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- Logo Start -->
+                        <a href="" class="logo">
+                            <h1 style="font-weight: 800; font-size: 45px;">AgroTech_IT</h1>
+                        </a>
+                        <!-- Logo End -->
+                        <!-- Menu Start -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#projects">Realisations</a></li>
+                            <li class="scroll-to-section"><a href="#team">L'Equipe</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Contactez-Nous</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- Menu End -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Banner -->
+    <div class="main-banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-banner">
+                        <div class="item item-1">
+                            <div class="header-text">
+                                <span style="font-weight: 800" class="category">Nos Dernieres Actualites</span>
+                                <h2>With Scholar Teachers, Everything Is Easier</h2>
+                                <p>Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.</p>
+                                <div class="buttons">
+                                <div class="main-button">
+                                    <a href="#">Request Demo</a>
+                                </div>
+                                <div class="icon-button">
+                                    <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="item item-2">
+                            <div class="header-text">
+                                <span class="category">Best Result</span>
+                                <h2>Get the best result out of your effort</h2>
+                                <p>You are allowed to use this template for any educational or commercial purpose. You are not allowed to re-distribute the template ZIP file on any other website.</p>
+                                <div class="buttons">
+                                <div class="main-buttoOur pn">
+                                    <a href="#">Request Demo</a>
+                                </div>
+                                <div class="icon-button">
+                                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="item item-3">
+                            <div class="header-text">
+                                <span class="category">Online Learning</span>
+                                <h2>Online Learning helps you save the time</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
+                                <div class="buttons">
+                                <div class="main-button">
+                                    <a href="#">Request Demo</a>
+                                </div>
+                                <div class="icon-button">
+                                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="section about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="accordion" id="accordionExample">
+                        <!-- Accordion items go here -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Where shall we begin?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do we work together?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Why SCHOLAR is the best?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                There are more than one hundred responsive HTML templates to choose from <strong>Template</strong>Mo website. You can browse by different tags or categories.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Do we get the best support?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                You can also search on Google with specific keywords such as <code>templatemo business templates, templatemo gallery templates, admin dashboard templatemo, 3-column templatemo, etc.</code>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 align-self-center">
+                    <div class="section-heading">
+                        <h2>Qui sommes nous ?</h2><br><br>
+                        <p style="font-weight:600;font-size:18px;">Une équipe d'étudiants passionnés, soutenue par l'expertise d'un docteur en informatique chevronné, s'engage à atteindre de nouveaux sommets dans l'innovation et l'excellence...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h6>Realisations</h6>
+                        <h2>Nos dernieres Realisations</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row event_box">
+                {% for projet_data in projets_data %}
+                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+                    <div class="events_item">
+                        <div class="thumb">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#{{projet_data.projet}}"><img src="{{ projet_data.projet.main_image.url }}" alt="{{ projet_data.projet.title }}"></a>
+                            <div class="catego">
+                                {% for tag in projet_data.projet.tags.all %}
+                                    <span  class="category">{{ tag.name }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            {% for user in projet_data.projet.utilisateurs.all %}
+                                <span style="font-size:14px;" class="author">{{ user.name }} {{ user.lastname }} |</span>
+                            {% endfor %}
+                            <h4>{{ projet_data.projet.title }}</h4>
+                            <h5>{{ projet_data.projet.description }}</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" style="padding:0;" id="{{projet_data.projet}}" tabindex="-1" role="dialog" aria-labelledby="carouselModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <div id="cr" class="carousel slide" data-ride="carousel"> 
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#cr" data-bs-slide-to="-1" class="active" aria-current="true"></button>
+                                        {% for i in projet_data.media_count %}
+                                            <button type="button" data-bs-target="#cr" data-bs-slide-to="{{i}}"></button>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{projet_data.projet.main_image.url}}" class="d-block w-100" alt="...">
+                                        </div>
+                                        {% for media in projet_data.media %}
+                                            {% if media.image %}
+                                                <div class="carousel-item">
+                                                    <img src="{{media.image.url}}" class="d-block w-100" alt="...">
+                                                </div>
+                                            {% elif media.video %} 
+                                                <div class="carousel-item">
+                                                    <video controls class="img-fluid">
+                                                        <source src="{{ media.video.url }}" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#cr" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#cr" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </section>
+
+     {% comment %} <!-- Fun Facts Section -->
+    <div class="section fun-facts">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="wrapper">
+                <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter">
+                    <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+                    <p class="count-text ">Happy Students</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter">
+                    <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
+                    <p class="count-text ">Course Hours</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter">
+                    <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
+                    <p class="count-text ">Employed Students</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter end">
+                    <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
+                    <p class="count-text ">Years Experience</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div> {% endcomment %}
+
+
+    <!-- Team Section -->
+    <div class="row pt-5">
+        <div class="col-lg-12 text-center">
+        <div class="section-heading">
+            <h6>Team</h6>
+            <h2>Les membres</h2>
+        </div>
+        </div>
+    </div>
+
+    <div class="team section" id="team">
+        <div class="container">
+            <div class="row">
+                {% for user in users %}
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <div class="main-content">
+                        <img src="{{ user.profil.url }}"  alt="Profil de {{ user.name }}"/>
+                        <span class="category">{{ user.job_title }}</span>
+                        <h4>{{ user.lastname }} {{ user.name }}</h4>
+                        <ul class="social-icons">
+                            <li><a href="{{ user.linkedin_url }}"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="{{ user.github_url }}"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="section testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="owl-carousel owl-testimonials">
+                        {% for user in users %}
+                            <div class="item">
+                                <p style="font-size: 20px; font-weight: 500;">" {{ user.motivation }} "</p>
+                                <div class="author">
+                                    <img src="{{ user.profil.url }}" alt="Profil de {{ user.name }}">
+                                    <span class="category">{{ user.job_title }}</span>
+                                    <h4>{{ user.lastname }} {{ user.name }}</h4>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-lg-5 align-self-center">
+                    <div class="section-heading">
+                        <h6 style="padding-bottom:150px; font-weight: 800; font-size: 40px;">Motivations  et Avis</h6>
+                        <h3 style="font-weight: 400; font-size: 25px;" ></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Us Section -->
+    <div class="contact-us section" id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6  align-self-center">
+            <div class="section-heading">
+                <h6 style="display: flex; justify-content:center; font-weight: 800; font-size: 25px;">Contactez Nous</h6>
+                <h2 class="row"style="display: flex; justify-content:center;">N'hesitez a nous suivre </h2>
+                <div style="margin: 20px" class="main-button">
+                    <a href="https://wa.me/+22953537434?text=Hello. Je souhaite discuter avec vous par rapport a AgroTech"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+                <div style="margin: 20px" class="main-button">
+                    <a href="mailto:destinataire@example.com"><i class="fa-solid fa-envelope"></i> Mail</a>
+                </div>
+                <div style="margin: 20px" class="main-button">
+                    <a href="https://www.linkedin.com/in/votreprofil"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+        <div class="col-lg-12">
+            <p style="color: black; font-size:18px;font-weight:500;">Copyright © 2024 AgroTech IT Organization. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/counter.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+</html>
