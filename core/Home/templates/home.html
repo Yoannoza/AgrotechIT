@@ -358,7 +358,7 @@
                 {% for user in users %}
                 <div class="col-lg-3 col-md-6">
                     <div class="team-member">
-                        <div class="main-content">
+                        <div  class="main-content">
                         <img src="{{ user.profil.url }}"  alt="Profil de {{ user.name }}"/>
                         <span class="category">{{ user.job_title }}</span>
                         <h4>{{ user.lastname }} {{ user.name }}</h4>
@@ -384,7 +384,7 @@
                             <div class="item">
                                 <p style="font-size: 20px; font-weight: 500;">" {{ user.motivation }} "</p>
                                 <div class="author">
-                                    <img src="{{ user.profil.url }}" alt="Profil de {{ user.name }}">
+                                    <img src="{{ user.profil.url }}" alt="Profil de {{ user.name }}"><br>
                                     <span class="category">{{ user.job_title }}</span>
                                     <h4>{{ user.lastname }} {{ user.name }}</h4>
                                 </div>

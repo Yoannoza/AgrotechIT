@@ -1140,14 +1140,14 @@ Team Style
 }
 
 .team-member:hover img {
-  top: -120px;
+  top: -200px;
 }
 
 .team-member img {
   max-width: 220px;
   border-radius: 50%;
   position: absolute;
-  top: -110px;
+  top: -170px;
   left: 50%;
   transform: translateX(-110px);
   transition: all .3s;
@@ -1249,7 +1249,7 @@ Testimonials Style
 }
 
 .testimonials .item img {
-  border-radius: 50%;
+  border-radius: 70%;
   max-width: 100px;
   float: left;
   margin-right: 25px;
