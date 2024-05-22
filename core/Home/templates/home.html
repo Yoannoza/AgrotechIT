@@ -236,7 +236,7 @@
                 <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
                     <div class="events_item">
                         <div class="thumb">
-                            <a type="button" data-bs-toggle="modal" data-bs-target="#{{projet_data.projet}}"><img src="{{ projet_data.projet.main_image.url }}" alt="{{ projet_data.projet.title }}"></a>
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#{{projet_data.id1}}"><img src="{{ projet_data.projet.main_image.url }}" alt="{{ projet_data.projet.title }}"></a>
                             <div class="catego">
                                 {% for tag in projet_data.projet.tags.all %}
                                     <span  class="category">{{ tag.name }}</span>
@@ -254,15 +254,15 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" style="padding:0;" id="{{projet_data.projet}}" tabindex="-1" role="dialog" aria-labelledby="carouselModalLabel" aria-hidden="true">
+                <div class="modal fade" style="padding:0;" id="{{projet_data.id1}}" tabindex="-1" role="dialog" aria-labelledby="carouselModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-body p-0">
-                                <div id="cr" class="carousel slide" data-ride="carousel"> 
+                                <div id="{{projet_data.id2}}" class="carousel slide" data-ride="carousel"> 
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#cr" data-bs-slide-to="-1" class="active" aria-current="true"></button>
+                                        <button type="button" data-bs-target="#{{projet_data.id2}}" data-bs-slide-to="-1" class="active" aria-current="true"></button>
                                         {% for i in projet_data.media_count %}
-                                            <button type="button" data-bs-target="#cr" data-bs-slide-to="{{i}}"></button>
+                                            <button type="button" data-bs-target="#{{projet_data.id2}}" data-bs-slide-to="{{i}}"></button>
                                         {% endfor %}
                                     </div>
                                     <div class="carousel-inner">
@@ -284,11 +284,11 @@
                                             {% endif %}
                                         {% endfor %}
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#cr" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#{{projet_data.id2}}" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#cr" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#{{projet_data.id2}}" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
