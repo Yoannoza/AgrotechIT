@@ -15,10 +15,6 @@ def home(request):
         media = [item for pair in zip_longest(photos, videos) for item in pair if item is not None]
 
         
-
-        # Générer un UUID4
-        unique_id = uuid.uuid4()
-        
         context.append({
             'id1': uuid.uuid4().hex,
             'id2': uuid.uuid4().hex,
